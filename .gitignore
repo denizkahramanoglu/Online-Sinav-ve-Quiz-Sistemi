@@ -1,0 +1,29 @@
+﻿# .NET derleme ve paket ciktilari
+**/bin/
+**/obj/
+**/out/
+*.dll
+*.exe
+*.pdb
+*.user
+*.suo
+
+# Node.js bagimliliklari ve build ciktilari
+**/node_modules/
+**/dist/
+**/build/
+.npm/
+
+# Gizli bilgiler ve yerel yapilandirmalar
+.env
+.env.*
+!**/.env.example
+**/appsettings.Development.json
+**/appsettings.Local.json
+
+# IDE ve Isletim Sistemi dosyalari
+.vs/
+.idea/
+*.sln.iml
+.DS_Store
+Thumbs.db
