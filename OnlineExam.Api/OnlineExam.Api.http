@@ -1,6 +1,21 @@
-@OnlineExam.Api_HostAddress = http://localhost:5086
+﻿@OnlineExam.Api_HostAddress = http://localhost:5086
 
-GET {{OnlineExam.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+### 1. Öğretmen Kaydı Oluştur (201 Created)
+POST {{OnlineExam.Api_HostAddress}}/api/auth/register
+Content-Type: application/json
 
-###
+{
+  "fullName": "Deniz Kahramanoğlu",
+  "email": "deniz.teacher@nku.edu.tr",
+  "password": "Password123!",
+  "role": "Teacher"
+}
+
+### 2. Öğretmen Girişi Yap ve Token Al (200 OK)
+POST {{OnlineExam.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "deniz.teacher@nku.edu.tr",
+  "password": "Password123!"
+}
