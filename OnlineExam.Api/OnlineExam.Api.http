@@ -1,7 +1,7 @@
-﻿@OnlineExam.Api_HostAddress = http://localhost:5086
+﻿@host = http://localhost:5086
 
 ### 1. Öğretmen Kaydı Oluştur (201 Created)
-POST {{OnlineExam.Api_HostAddress}}/api/auth/register
+POST {{host}}/api/auth/register
 Content-Type: application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 ### 2. Öğretmen Girişi Yap ve Token Al (200 OK)
-POST {{OnlineExam.Api_HostAddress}}/api/auth/login
+POST {{host}}/api/auth/login
 Content-Type: application/json
 
 {
